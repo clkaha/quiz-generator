@@ -1,8 +1,98 @@
 body {
 	background-color: #b2cbe4;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	margin: 50px;
 }
+
+footer,
+#main-column {
+	border-radius: 10px;
+	/* box-shadow: 2px 2px 2px #00000085; */
+	margin: 0 auto;
+	max-width: 600px;
+}
+
+#main-column {
+	background-color: #ffffff85;
+	padding: 20px;
+}
+footer {
+	background-color: #ffffff85;
+	margin: 50px auto;
+	padding: 5px 20px;
+}
+form {
+	background-color: #b2b2e485;
+	border-radius: 10px;
+	margin: 20px 10px;
+	padding: 10px 20px;
+}
+#quiz-question {
+	background-color: #b2cbe485;
+	border-radius: 10px;
+	margin: 10px;
+	padding: 10px 20px;
+}
+a {
+	color: #3f7ab4;
+	font-weight: 500;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline 2px;
+	text-underline-offset: 2px;
+}
+a:focus {
+	outline: #050505 solid 2px;
+}
+h1 {
+	font-weight: 700;
+	font-size: 2em;
+	margin: 0;
+	text-align: center;
+}
+
+h2,
 label {
 	font-size: 1.5em;
 	font-weight: 600;
+	margin: 0;
+}
+label {
+	display: block;
+	margin: 10px 0;
+}
+input {
+	display: block;
+	font-size: 1.15em;
+	margin: 10px 0;
+	border-radius: 5px;
+	padding: 10px 10px;
+}
+#subject-input {
+	width: 75%;
+	border: none;
+}
+
+#subject-submit {
+	background-color: #36383a;
+	border-color: #36383a;
+	color: #fff;
+	border-width: 2px;
+	font-weight: 500;
+}
+
+#subject-submit:hover {
+	cursor: pointer;
+	text-decoration: underline 2px;
+	text-underline-offset: 2px;
+}
+
+#subject-input:focus,
+#subject-submit:focus {
+	box-shadow:
+		0 0 0 3px #050505,
+		0px 0 0 6px #fd0;
+	outline: #050505 solid 2px;
+	transition: none;
 }

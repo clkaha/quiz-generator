@@ -7,31 +7,35 @@
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
-		<header><h1>Quiz question generator</h1></header>
-		<main>
+		<main id="main-column">
+			<h1>Quiz question generator</h1>
 			<form>
-				<label for="quiz-subject" id="quiz-subject-label"
+				<label for="subject-input" id="quiz-subject-label"
 					>What do you want me to quiz you on?</label
 				>
 				<input
-					id="quiz-subject"
+					id="subject-input"
 					type="text"
 					placeholder="Enter a subject"
 					autofocus
 					required
 					aria-required="true"
 				/>
-				<input type="submit" value="Quiz me!" />
+				<input id="subject-submit" type="submit" value="Quiz me!" />
 			</form>
-			<div>Quiz question will appear here.</div>
+			<div id="quiz-question">
+                <h2>Here's your quiz question:</h2>
+            </p>Quiz question will appear here.</p></div>
 		</main>
 		<footer>
-			This project was coded by Claire H and is open-sourced on
-			<a href="https://github.com/clkaha/quiz-generator/" target="_blank"
-				>GitHub</a
-			>
-			and is hosted on
-			<a href="https://quizquestiongenerator.netlify.app/">Netlify</a>
+			<p>
+				This project was coded by Claire H and is open-sourced on
+				<a href="https://github.com/clkaha/quiz-generator/" target="_blank"
+					>GitHub</a
+				>
+				and is hosted on
+				<a href="https://quizquestiongenerator.netlify.app/">Netlify</a>
+			</p>
 		</footer>
 		<script src="script.js"></script>
 	</body>
