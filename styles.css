@@ -1,3 +1,8 @@
 body {
 	background-color: #b2cbe4;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+label {
+	font-size: 1.5em;
+	font-weight: 600;
 }

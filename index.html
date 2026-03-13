@@ -7,7 +7,24 @@
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
-		<h1>Quiz question generator</h1>
+		<header><h1>Quiz question generator</h1></header>
+		<main>
+			<form>
+				<label for="quiz-subject" id="quiz-subject-label"
+					>What do you want me to quiz you on?</label
+				>
+				<input
+					id="quiz-subject"
+					type="text"
+					placeholder="Enter a subject"
+					autofocus
+					required
+					aria-required="true"
+				/>
+				<input type="submit" value="Quiz me!" />
+			</form>
+			<div>Quiz question will appear here.</div>
+		</main>
 		<footer>
 			This project was coded by Claire H and is open-sourced on
 			<a href="https://github.com/clkaha/quiz-generator/" target="_blank"
