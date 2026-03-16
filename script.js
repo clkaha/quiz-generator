@@ -1,15 +1,15 @@
 function displayQuestions(response) {
-	var quizQuestionElement = document.getElementById(`quiz-question-container`);
+	var quizQuestionsElement = document.getElementById(`quiz-questions`);
 	var yourQuestions = response.data.answer;
-	var typewriter = new Typewriter(quizQuestionElement, {
+	var typewriter = new Typewriter(quizQuestionsElement, {
 		loop: false,
-		delay: 60,
+		delay: 50,
 		cursor: "",
 	});
 
 	typewriter
 		.typeString(
-			`<div id="quiz-question"><h2>Here are your quiz questions:</h2><div>${yourQuestions}</div></div>`,
+			`<h2>Here are your quiz questions:</h2><div>${yourQuestions}</div>`,
 		)
 		.start();
 }
@@ -22,6 +22,20 @@ function generateQuestion(event) {
 	let context =
 		"You are a quiz show fan. You love to ask quiz questions. Your mission is to generate simple, general knowledge quiz questions.";
 	let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+	var quizQuestionContainer = document.getElementById(
+		`quiz-question-container`,
+	);
+	var typewriter = new Typewriter(quizQuestionContainer, {
+		loop: false,
+		delay: 50,
+		cursor: "",
+	});
+	typewriter
+		.typeString(
+			`<div id="quiz-questions"><h2>Just thinking...</h2><p>Generating quiz questions about ${subjectInput.value}.</div>`,
+		)
+		.start();
 
 	console.log("Generating quiz questions");
 	console.log(`Prompt: ${prompt}`);
