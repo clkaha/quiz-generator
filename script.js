@@ -37,10 +37,6 @@ function generateQuestion(event) {
 		)
 		.start();
 
-	console.log("Generating quiz questions");
-	console.log(`Prompt: ${prompt}`);
-	console.log(`Contenxt: ${context}`);
-
 	axios.get(apiUrl).then(displayQuestions);
 }
 
