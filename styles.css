@@ -45,6 +45,7 @@ a:hover {
 a:focus {
 	outline: #050505 solid 2px;
 }
+
 h1 {
 	font-weight: 700;
 	font-size: 2em;
@@ -56,7 +57,10 @@ h2,
 label {
 	font-size: 1.5em;
 	font-weight: 600;
-	margin: 0;
+}
+h3 {
+	font-size: 1.25em;
+	font-weight: 600;
 }
 label {
 	display: block;
